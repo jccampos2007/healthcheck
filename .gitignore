@@ -1,0 +1,5 @@
+.env.healthcheck
+__pycache__/
+*.pyc
+*.json
+!services.example.json

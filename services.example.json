@@ -1,0 +1,29 @@
+{
+  "services": [
+    {
+      "name": "Mi Web App",
+      "url": "https://miapp.com",
+      "method": "GET",
+      "timeout": 10,
+      "expect_status": 200,
+      "expect_body": "</html>"
+    },
+    {
+      "name": "API Usuarios",
+      "url": "https://api.miapp.com/v1/health",
+      "method": "GET",
+      "expect_status": 200,
+      "expect_body": "\"status\":\"ok\""
+    },
+    {
+      "name": "API Login",
+      "url": "https://api.miapp.com/v1/auth/ping",
+      "method": "POST",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "timeout": 5,
+      "expect_status": 200
+    }
+  ]
+}
